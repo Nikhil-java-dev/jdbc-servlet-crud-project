@@ -1,0 +1,127 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product Registration</title>
+
+<style>
+/* ===== Background ===== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Glass Card ===== */
+.container {
+    width: 480px;
+    padding: 35px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 11px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 18px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Footer text */
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>📦 Product Registration</h2>
+
+    <form action="productRegistration" method="get">
+
+        <label>Product ID</label>
+        <input type="text" name="id" placeholder="Enter product id" required>
+
+        <label>Product Name</label>
+        <input type="text" name="name" placeholder="Enter product name" required>
+
+        <label>Color</label>
+        <input type="text" name="color" placeholder="Enter color">
+
+        <label>Price</label>
+        <input type="number" name="price" placeholder="Enter price">
+
+        <label>Manufacture Date</label>
+        <input type="date" name="mfd">
+
+        <label>Expiry Date</label>
+        <input type="date" name="expd">
+
+        <button type="submit" value="register">Add Product</button>
+    </form>
+
+    <div class="footer-text">
+        © 2025 Product Management System
+    </div>
+</div>
+
+</body>
+</html>

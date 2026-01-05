@@ -1,0 +1,122 @@
+/* ===== PAGE ===== */
+body {
+    background: #f5f7fb; /* very soft blue-gray */
+    font-family: "Inter", "Segoe UI", Tahoma, Arial, sans-serif;
+    color: #2e2e2e;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 92%;
+    margin: 45px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== TITLE ===== */
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3f3d56;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* ===== TABLE ===== */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Header */
+.product-table th {
+    background: #f0f3f8;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+/* Body */
+.product-table td {
+    padding: 14px;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #eef1f6;
+}
+
+/* Zebra rows */
+.product-table tbody tr:nth-child(even) {
+    background-color: #fafbfe;
+}
+
+/* Hover */
+.product-table tbody tr:hover {
+    background-color: #f2f6ff;
+    transition: background-color 0.25s ease;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+/* Edit */
+.edit-btn {
+    background-color: #edf7ee;
+    color: #2e7d32;
+}
+
+.edit-btn:hover {
+    background-color: #dff1e2;
+}
+
+/* Delete */
+.delete-btn {
+    background-color: #fdeaea;
+    color: #c62828;
+}
+
+.delete-btn:hover {
+    background-color: #f9d6d6;
+}
+
+/* ===== ADD BUTTON ===== */
+.div {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-btn {
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 14px 36px;
+    font-size: 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.35);
+}
+
+.expired {
+    background-color: #fff0f0 !important;
+    color: #c62828;
+    font-weight: 600;
+}
