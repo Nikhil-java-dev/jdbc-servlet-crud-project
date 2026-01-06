@@ -108,8 +108,6 @@
     }
 }
 
-
-
 </style>
 </head>
 <body>
@@ -151,9 +149,9 @@
         <div class="footer-section social">
             <h3>Connect</h3>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/nikhil-srivastava-7a2266298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-anc"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/nikhil-srivastava-7a2266298" class="footer-anc"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Nikhil-java-dev"><i class="fa-brands fa-github"></i></a>
+                <a href="http://gmail.com/"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
