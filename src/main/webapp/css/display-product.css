@@ -1,122 +1,122 @@
-/* ===== PAGE ===== */
+@charset "UTF-8";
 body {
-    background: #f5f7fb; /* very soft blue-gray */
-    font-family: "Inter", "Segoe UI", Tahoma, Arial, sans-serif;
-    color: #2e2e2e;
+	background-color: #f0f8ff;
+	font-family: Arial, sans-serif;
+	background-image: url("image/bkg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* ===== CONTAINER ===== */
+
+
+.action-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+   
+}
+.delete-btn:hover {
+    background-color: #dc3545;
+    color: white;
+   
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+     transform: scale(1.05);
+}
+
+
+
 .container {
-    width: 92%;
-    margin: 45px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ===== TITLE ===== */
-.title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    color: #3f3d56;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-}
-
-/* ===== TABLE ===== */
+/* Table wrapper */
 .product-table {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 14px;
+    border: 2px solid #2E8B57;
+    border-radius: 10px;
     overflow: hidden;
 }
 
-/* Header */
 .product-table th {
-    background: #f0f3f8;
-    color: #4a4a4a;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 14px;
-    border-bottom: 1px solid #e5eaf0;
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    padding: 12px;
+    border: 1px solid #2E8B57;
 }
 
-/* Body */
 .product-table td {
-    padding: 14px;
-    font-size: 14px;
-    color: #555;
-    border-bottom: 1px solid #eef1f6;
-}
-
-/* Zebra rows */
-.product-table tbody tr:nth-child(even) {
-    background-color: #fafbfe;
-}
-
-/* Hover */
-.product-table tbody tr:hover {
-    background-color: #f2f6ff;
-    transition: background-color 0.25s ease;
-}
-
-/* ===== ACTION BUTTONS ===== */
-.action-btn {
-    padding: 6px 14px;
-    font-size: 13px;
-    font-weight: 500;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.25s ease;
-}
-
-/* Edit */
-.edit-btn {
-    background-color: #edf7ee;
-    color: #2e7d32;
-}
-
-.edit-btn:hover {
-    background-color: #dff1e2;
-}
-
-/* Delete */
-.delete-btn {
-    background-color: #fdeaea;
-    color: #c62828;
-}
-
-.delete-btn:hover {
-    background-color: #f9d6d6;
-}
-
-/* ===== ADD BUTTON ===== */
-.div {
+    padding: 10px;
     text-align: center;
-    margin-top: 30px;
+    background-color: #ffe6ec;
+    border: 1px solid #e2a6b5;   /* ✅ vertical lines */
+}
+
+.product-table tr:hover {
+    background-color: #ffd6e0;
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    margin-top:8px;
+}
+
+/*
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}*/
+
+.div {
+	text-align: center;
+	margin-top: 20px;
 }
 
 .add-btn {
-    background: #4f46e5;
-    color: #ffffff;
-    padding: 14px 36px;
-    font-size: 16px;
-    border-radius: 999px;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
     text-decoration: none;
-    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
-    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom:20px;
+    transition: transform 0.5s;
 }
 
 .add-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.35);
-}
-
-.expired {
-    background-color: #fff0f0 !important;
-    color: #c62828;
-    font-weight: 600;
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    cursor: pointer;
 }
